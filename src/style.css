@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+        font-family: "Muli", sans-serif;
+        color: #746859; }
+
+.navbar-logo {
+    justify-content: center;
+}
+.language {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.footer-class img {
+    padding-top: 20px;
+}
+
+#footer-nav li a {
+    font-size: 14pt;
+    color: #c6c6c6;
+    padding: 10px 10px;
+    text-align: center;
+
+}
+/* @media (max-width: 768px) {
+#footer-nav {
+    flex-direction: column;
+}
+} */
+.nav {
+    padding: 20px 0;
+}
+footer img {
+    margin: 0 auto;
+    width: 100px;
+}
