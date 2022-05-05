@@ -53,6 +53,11 @@ h2.section-title {
     text-align: center;
     padding: 20px 0;
 }
+h3.section-title {
+    font-size: 28px;
+    text-align: right;
+    padding: 20px 0;
+}
 .news-container .row {
     padding: 15px 0;
     border-bottom: #746859 1px solid;
