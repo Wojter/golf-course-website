@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,17 +16,17 @@
 
 <body>
     <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar flex-wrap navbar-expand-lg navbar-light bg-light">
             <!-- <div class="container-fluid"> -->
                 <a href="#" class="navbar-logo">
                     <img src="/img/logo.svg" alt="golf course logo">
                 </a>
                 <ul class="language nav">
                     <li class="active">
-                        <a href="#">pl</a>
+                        <a href="#">PL</a>
                     </li>
                     <li>
-                        <a href="#">en</a>
+                        <a href="#">EN</a>
                     </li>
                 </ul>
                 <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
@@ -35,7 +35,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase">
+                    <ul class="navbar-nav mr-auto mb-2 mb-lg-0 text-uppercase">
                         <li class="nav-item">
                             <a class="nav-link" href="#">Aktualności</a>
                         </li>
@@ -64,13 +64,60 @@
     </header>
 
 <p>Strona główna</p>
+<a class="weatherwidget-io" href="https://forecast7.com/pl/52d4116d93/poznan/" data-label_1="DZISIAJ" data-font="Trebuchet MS" data-icons="Climacons" data-theme="original" >DZISIAJ</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+
+<section id="news">
+
+    <div class="container w-10/12 news-container">
+        <h2 class="section-title">AKTUALNOŚCI</h2>
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <p>2022-05-05<br><b>Dzisiaj pole zamknięte.</b></p>
+            </div>
+            <div class="col-12 col-md-9">
+                <p class="news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia totam doloremque sed consequuntur delectus facilis, alias sapiente consectetur nesciunt veritatis. Laudantium adipisci repudiandae libero, obcaecati a veritatis dolorem dolore placeat?</p>
+                <a href="#" class="news-link">więcej ></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <p>2022-05-05<br><b>Dzisiaj pole zamknięte.</b></p>
+            </div>
+            <div class="col-12 col-md-9">
+                <p class="news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia totam doloremque sed consequuntur delectus facilis, alias sapiente consectetur nesciunt veritatis. Laudantium adipisci repudiandae libero, obcaecati a veritatis dolorem dolore placeat?</p>
+                <a href="#" class="news-link">więcej ></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <p>2022-05-05<br><b>Dzisiaj pole zamknięte.</b></p>
+            </div>
+            <div class="col-12 col-md-9">
+                <p class="news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia totam doloremque sed consequuntur delectus facilis, alias sapiente consectetur nesciunt veritatis. Laudantium adipisci repudiandae libero, obcaecati a veritatis dolorem dolore placeat?</p>
+                <a href="#" class="news-link">więcej ></a>
+            </div>
+        </div>        <div class="row">
+            <div class="col-12 col-md-3">
+                <p>2022-05-05<br><b>Dzisiaj pole zamknięte.</b></p>
+            </div>
+            <div class="col-12 col-md-9">
+                <p class="news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia totam doloremque sed consequuntur delectus facilis, alias sapiente consectetur nesciunt veritatis. Laudantium adipisci repudiandae libero, obcaecati a veritatis dolorem dolore placeat?</p>
+                <a href="#" class="news-link">więcej ></a>
+            </div>
+        </div>
+    </div>
+</section>
+
 <footer class="footer-class nav-bottom bg-[#777777]">
     <div class="container">
         <div class="row">
-            <div class="col-md-2 col-sm-12">
+            <div class="col-lg-2 col-md-12">
                 <img src="../img/logo.svg" alt="golf course logo">
             </div>
-            <div class="col-md-10 col-sm-12 text-center">
+            <div class="col-lg-10 col-md-12 text-center">
                 <ul id="footer-nav" class="nav text-uppercase nav-bottom flex-col lg:flex-row">
                     <li>
                         <a href="#">Polityka prywatności</a>

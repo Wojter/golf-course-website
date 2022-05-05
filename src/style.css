@@ -4,10 +4,15 @@
 
 body {
         font-family: "Muli", sans-serif;
-        color: #746859; }
+        color: #746859;
+        background-color: white;
+}
 
 .navbar-logo {
+    display: flex;
     justify-content: center;
+    flex-grow: 1;
+    height: auto;
 }
 .language {
     display: flex;
@@ -15,6 +20,56 @@ body {
 }
 .text-uppercase {
     text-transform: uppercase !important;
+}
+.navbar-logo img {
+    width: 150px;
+    height: 100px;
+}
+@media (max-width: 992px) {
+    .navbar-logo img {
+        width: 100px;
+        height: 50px;
+    }
+}
+.navbar-toggler {
+    border: 0;
+}
+.language li {
+    border-left: 1px #746859 solid; 
+}
+.language li:first-child {
+    border-left: 0; 
+}
+.language li a {
+    padding: 0 4px;
+}
+
+#navbarSupportedContent {
+    flex-basis: 100%;
+}
+
+h2.section-title {
+    font-size: 28px;
+    text-align: center;
+    padding: 20px 0;
+}
+.news-container .row {
+    padding: 15px 0;
+    border-bottom: #746859 1px solid;
+
+}
+.news-container .news-text {
+    font-size: 14px;
+    text-align: justify;
+}
+.news-container .news-link {
+    font-size: 14px;
+    float: right;
+    margin-top: -2px;
+    color: green;
+}
+.news-container .news-link:hover {
+    color: rgb(42, 18, 68);
 }
 
 .footer-class img {
@@ -37,6 +92,7 @@ body {
     padding: 20px 0;
 }
 footer img {
+    justify-content: center;
     margin: 0 auto;
     width: 100px;
 }
