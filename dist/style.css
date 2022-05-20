@@ -510,10 +510,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.5rem;
 }
 
-.w-10\/12 {
-  width: 83.333333%;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -591,6 +587,12 @@ h2.section-title {
   padding: 20px 0;
 }
 
+h3.section-title {
+  font-size: 28px;
+  text-align: left;
+  padding: 20px 0;
+}
+
 .news-container .row {
   padding: 15px 0;
   border-bottom: #746859 1px solid;
@@ -614,6 +616,58 @@ h2.section-title {
 
 .footer-class img {
   padding-top: 20px;
+}
+
+#tournament{
+  position: relative;
+}
+
+#tournament .tournament-back{
+  background: url(../img/golf_4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  z-index: -2;
+  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 90%);
+          clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 90%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#tournament .tournament-cover {
+  background-color: #db6833bc;
+  position: absolute;
+  z-index: -1;
+  -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 80%);
+          clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 80%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#tournament .tournament-content{
+  color: #fff;
+}
+
+.tournament-content h2.section-title {
+  padding-top: 70px;
+}
+
+.tournament-content .month{
+  padding: 25px 5px;
+  border-bottom: #fff 1px solid;
+}
+
+.tournament-content .month li {
+  margin-top: 5px;
+}
+
+.tournament-content .tournament-bottom-space {
+  height: 100px;
 }
 
 #footer-nav li a {

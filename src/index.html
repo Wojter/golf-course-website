@@ -4,14 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
 
-    <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="/dist/style.css" rel="stylesheet">
-    
+
     <title>Golf Course</title>
 </head>
 
@@ -19,133 +15,196 @@
     <header class="header">
         <nav class="navbar flex-wrap navbar-expand-lg navbar-light bg-light">
             <!-- <div class="container-fluid"> -->
-                <a href="#" class="navbar-logo">
-                    <img src="/img/logo.svg" alt="golf course logo">
-                </a>
-                <ul class="language nav">
-                    <li class="active">
-                        <a href="#">PL</a>
+            <a href="#" class="navbar-logo">
+                <img src="/img/logo.svg" alt="golf course logo">
+            </a>
+            <ul class="language nav">
+                <li class="active">
+                    <a href="#">PL</a>
+                </li>
+                <li>
+                    <a href="#">EN</a>
+                </li>
+            </ul>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0 text-uppercase">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Aktualności</a>
                     </li>
-                    <li>
-                        <a href="#">EN</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Turnieje</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pole</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Noclegi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Akademia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABC golfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kontakt</a>
                     </li>
                 </ul>
-                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto mb-2 mb-lg-0 text-uppercase">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Aktualności</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Turnieje</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pole</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Noclegi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Akademia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ABC golfa</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Kontakt</a>
-                        </li>
-                    </ul>
                 <!-- </div> -->
             </div>
         </nav>
     </header>
 
-<p>Strona główna</p>
-<a class="weatherwidget-io" href="https://forecast7.com/pl/52d4116d93/poznan/" data-label_1="DZISIAJ" data-font="Trebuchet MS" data-icons="Climacons" data-theme="original" >DZISIAJ</a>
-<script>
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-</script>
+    <p>Strona główna</p>
+    <a class="weatherwidget-io" href="https://forecast7.com/pl/52d4116d93/poznan/" data-label_1="DZISIAJ"
+        data-font="Trebuchet MS" data-icons="Climacons" data-theme="original">DZISIAJ</a>
+    <script>
+        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+    </script>
 
-<section id="news">
+    <section id="news">
 
-    <div class="container w-10/12 news-container">
-        <h2 class="section-title">AKTUALNOŚCI</h2>
-        <div class="row">
-            <div class="col-12 col-md-3">
-                <p>2022-05-05<br><b>Dzisiaj pole zamknięte.</b></p>
+        <div class="container news-container">
+            <h2 class="section-title">AKTUALNOŚCI</h2>
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <p>2022-05-05<br><b>Dzisiaj pole zamknięte.</b></p>
+                </div>
+                <div class="col-12 col-md-9">
+                    <p class="news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia totam
+                        doloremque sed consequuntur delectus facilis, alias sapiente consectetur nesciunt veritatis.
+                        Laudantium adipisci repudiandae libero, obcaecati a veritatis dolorem dolore placeat?</p>
+                    <a href="#" class="news-link">więcej ></a>
+                </div>
             </div>
-            <div class="col-12 col-md-9">
-                <p class="news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia totam doloremque sed consequuntur delectus facilis, alias sapiente consectetur nesciunt veritatis. Laudantium adipisci repudiandae libero, obcaecati a veritatis dolorem dolore placeat?</p>
-                <a href="#" class="news-link">więcej ></a>
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <p>2022-05-05<br><b>Dzisiaj pole zamknięte.</b></p>
+                </div>
+                <div class="col-12 col-md-9">
+                    <p class="news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia totam
+                        doloremque sed consequuntur delectus facilis, alias sapiente consectetur nesciunt veritatis.
+                        Laudantium adipisci repudiandae libero, obcaecati a veritatis dolorem dolore placeat?</p>
+                    <a href="#" class="news-link">więcej ></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <p>2022-05-05<br><b>Dzisiaj pole zamknięte.</b></p>
+                </div>
+                <div class="col-12 col-md-9">
+                    <p class="news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia totam
+                        doloremque sed consequuntur delectus facilis, alias sapiente consectetur nesciunt veritatis.
+                        Laudantium adipisci repudiandae libero, obcaecati a veritatis dolorem dolore placeat?</p>
+                    <a href="#" class="news-link">więcej ></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <p>2022-05-05<br><b>Dzisiaj pole zamknięte.</b></p>
+                </div>
+                <div class="col-12 col-md-9">
+                    <p class="news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia totam
+                        doloremque sed consequuntur delectus facilis, alias sapiente consectetur nesciunt veritatis.
+                        Laudantium adipisci repudiandae libero, obcaecati a veritatis dolorem dolore placeat?</p>
+                    <a href="#" class="news-link">więcej ></a>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 col-md-3">
-                <p>2022-05-05<br><b>Dzisiaj pole zamknięte.</b></p>
-            </div>
-            <div class="col-12 col-md-9">
-                <p class="news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia totam doloremque sed consequuntur delectus facilis, alias sapiente consectetur nesciunt veritatis. Laudantium adipisci repudiandae libero, obcaecati a veritatis dolorem dolore placeat?</p>
-                <a href="#" class="news-link">więcej ></a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-md-3">
-                <p>2022-05-05<br><b>Dzisiaj pole zamknięte.</b></p>
-            </div>
-            <div class="col-12 col-md-9">
-                <p class="news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia totam doloremque sed consequuntur delectus facilis, alias sapiente consectetur nesciunt veritatis. Laudantium adipisci repudiandae libero, obcaecati a veritatis dolorem dolore placeat?</p>
-                <a href="#" class="news-link">więcej ></a>
-            </div>
-        </div>        <div class="row">
-            <div class="col-12 col-md-3">
-                <p>2022-05-05<br><b>Dzisiaj pole zamknięte.</b></p>
-            </div>
-            <div class="col-12 col-md-9">
-                <p class="news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia totam doloremque sed consequuntur delectus facilis, alias sapiente consectetur nesciunt veritatis. Laudantium adipisci repudiandae libero, obcaecati a veritatis dolorem dolore placeat?</p>
-                <a href="#" class="news-link">więcej ></a>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
-<footer class="footer-class nav-bottom bg-[#777777]">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-2 col-md-12">
-                <img src="../img/logo.svg" alt="golf course logo">
-            </div>
-            <div class="col-lg-10 col-md-12 text-center">
-                <ul id="footer-nav" class="nav text-uppercase nav-bottom flex-col lg:flex-row">
-                    <li>
-                        <a href="#">Polityka prywatności</a>
-                    </li>
-                    <li>
-                        <a href="#">Regulamin</a>
-                    </li>
-                    <li>
-                        <a href="#">Współpraca</a>
-                    </li>
-                    <li>
-                        <a href="#">Noclegi</a>
-                    </li>
-                    <li>
-                        <a href="#">Restauracja</a>
-                    </li>
-                    <li>
-                        <a href="#">Hotel</a>
-                    </li>
-                </ul>
+    <section id="tournament">
+        <div>
+            <div class="tournament-back"></div>
+            <div class="tournament-cover"></div>
+            <div class="container">
+                <div class="tournament-content">
+                    <h2 class="section-title">TURNIEJE</h2>
+                    <h3 class="section-title text-uppercase">Kalendarz turniejów 2022</h3>
+                    <div class="row">
+                        <div class="col-12 col-lg-6 month">
+                            <p class=""><b>Kwiecień / April</b></p>
+                            <ul>
+                                <li><a href="#" title="Turniej otwarcia sezonu">08.04 - Turniej otwarcia sezonu</a></li>
+                                <li><a href="#" title="World Amateur Golfers Championship">22.04 - World Amateur Golfers
+                                        Championship</a></li>
+                                <li><a href="#" title="Junior Tournament">28.04 - Junior Tournament</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-6 month">
+                            <p class=""><b>Maj / May</b></p>
+                            <ul>
+                                <li><a href="#" title="Turniej otwarcia sezonu">08.04 - Turniej otwarcia sezonu</a></li>
+                                <li><a href="#" title="World Amateur Golfers Championship">22.04 - World Amateur Golfers
+                                        Championship</a></li>
+                                <li><a href="#" title="Junior Tournament">28.04 - Junior Tournament</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-6 month">
+                            <p class=""><b>Czerwiec / June</b></p>
+                            <ul>
+                                <li><a href="#" title="Turniej otwarcia sezonu">08.04 - Turniej otwarcia sezonu</a></li>
+                                <li><a href="#" title="World Amateur Golfers Championship">22.04 - World Amateur Golfers
+                                        Championship</a></li>
+                                <li><a href="#" title="Junior Tournament">28.04 - Junior Tournament</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-6 month">
+                            <p class=""><b>Lipiec / July</b></p>
+                            <ul>
+                                <li><a href="#" title="Turniej otwarcia sezonu">08.04 - Turniej otwarcia sezonu</a></li>
+                                <li><a href="#" title="World Amateur Golfers Championship">22.04 - World Amateur Golfers
+                                        Championship</a></li>
+                                <li><a href="#" title="Junior Tournament">28.04 - Junior Tournament</a></li>
+                            </ul>
+                        </div>
+    
+                    </div>
+                    <div class="tournament-bottom-space"></div>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </section>
 
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <footer class="footer-class nav-bottom bg-[#777777]">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-12">
+                    <img src="../img/logo.svg" alt="golf course logo">
+                </div>
+                <div class="col-lg-10 col-md-12 text-center">
+                    <ul id="footer-nav" class="nav text-uppercase nav-bottom flex-col lg:flex-row">
+                        <li>
+                            <a href="#">Polityka prywatności</a>
+                        </li>
+                        <li>
+                            <a href="#">Regulamin</a>
+                        </li>
+                        <li>
+                            <a href="#">Współpraca</a>
+                        </li>
+                        <li>
+                            <a href="#">Noclegi</a>
+                        </li>
+                        <li>
+                            <a href="#">Restauracja</a>
+                        </li>
+                        <li>
+                            <a href="#">Hotel</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
 </body>
 </html>
