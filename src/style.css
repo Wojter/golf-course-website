@@ -7,7 +7,6 @@ body {
         color: #746859;
         background-color: white;
 }
-
 .navbar-logo {
     display: flex;
     justify-content: center;
@@ -46,6 +45,7 @@ body {
 
 #navbarSupportedContent {
     flex-basis: 100%;
+    justify-content: center;
 }
 
 h2.section-title {
@@ -76,12 +76,43 @@ h3.section-title {
 .news-container .news-link:hover {
     color: rgb(42, 18, 68);
 }
-
-.footer-class img {
-    padding-top: 20px;
+#main .main-content {
+    color: #fff;
 }
-#tournament{
+.main-content .main-links {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.main-content .main-links li {
+    padding: 8px 0;
+    border-bottom: #fff 1px solid;
+}
+.main-content .main-links li:last-child {
+    border-bottom: none;
+}
+#tournament, #sleeping, #golf-abc, #main{
     position: relative;
+}
+.main-content .weather {
+    position: absolute;
+    width: 316px;
+    right: 5%;
+    /* padding-top: 10px; */
+    background-color: rgb(55, 158, 158);
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+}
+#main .main-back{
+    background: url(../img/golf_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: -2;
+    clip-path: polygon(0% 10%, 100% 5%, 100% 100%, 0 100%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 #tournament .tournament-back{
     background: url(../img/golf_4.jpg);
@@ -119,15 +150,89 @@ h3.section-title {
 .tournament-content .month li {
     margin-top: 5px;
 }
-.tournament-content .tournament-bottom-space {
+.div-space {
     height: 100px;
 }
+.footer-class img {
+    padding-top: 20px;
+}
+
+.mini-nav {
+    justify-content: center;
+}
+.mini-nav .navbar li{
+    padding: 0 6px;
+}
+#sleeping .mini-nav .vertical-separator {
+    height: 13px;
+    border-left:#fff solid 1px;
+}
+#academy .mini-nav .vertical-separator {
+    height: 13px;
+    border-left:#746859 solid 1px;
+}
+#sleeping {
+    color: #fff;
+}
+#sleeping h2,
+#academy h2 {
+    padding-bottom: 0px;
+}
+.sleeping-text p{
+    padding: 5px 0px;
+}
+#sleeping .div-space {
+    height: 50px;
+}
+.sleeping-back{
+    background-color: rgb(55, 158, 158);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: -2;
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.golf-course-price .table {
+    color:#746859;
+}
+#golf-abc .golf-abc-back{
+    background: url(../img/golf_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: -2;
+    clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 90%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#golf-abc .golf-abc-cover {
+    background-color: rgba(55, 158, 158, 0.608);
+    position: absolute;
+    z-index: -1;
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 80%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    mix-blend-mode: multiply;
+}
+#golf-abc .golf-abc-content{
+    color: #fff;
+}
+
 #footer-nav li a {
     font-size: 14pt;
-    color: #c6c6c6;
+    color: #c8c8c6;
     padding: 10px 10px;
     text-align: center;
-
 }
 /* @media (max-width: 768px) {
 #footer-nav {
