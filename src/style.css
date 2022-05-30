@@ -239,6 +239,15 @@ h3.section-title {
     flex-direction: column;
 }
 } */
+#contact .contact-content {
+    padding: 5px 10px;
+}
+.contact-content p {
+    padding-bottom: 13px;
+}
+.contact-content p b {
+    padding-bottom: 20px;
+}
 .nav {
     padding: 20px 0;
 }
