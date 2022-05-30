@@ -522,20 +522,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+.h-\[300px\] {
+  height: 300px;
+}
+
 .h-full {
   height: 100%;
 }
 
 .w-full {
   width: 100%;
-}
-
-.flex-initial {
-  flex: 0 1 auto;
-}
-
-.shrink {
-  flex-shrink: 1;
 }
 
 .list-inside {
@@ -556,10 +552,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex-wrap {
   flex-wrap: wrap;
-}
-
-.justify-self-center {
-  justify-self: center;
 }
 
 .rounded-md {
@@ -638,6 +630,14 @@ body {
   justify-content: center;
 }
 
+.header .navbar-nav .nav-item {
+  padding-left: 10px;
+}
+
+.header .navbar-nav .nav-item .nav-link{
+  padding: 4px 0;
+}
+
 h2.section-title {
   font-size: 28px;
   text-align: center;
@@ -676,7 +676,7 @@ h3.section-title {
 }
 
 .main-content .main-links {
-  padding-top: 50px;
+  padding-top: 70px;
   padding-bottom: 30px;
 }
 
@@ -891,13 +891,51 @@ footer img {
   width: 100px;
 }
 
+@media (max-width: 768px) {
+  #tournament .tournament-cover {
+    -webkit-clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 95%);
+            clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 95%);
+  }
+
+  #tournament .tournament-back{
+    -webkit-clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 95%);
+            clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 95%);
+  }
+
+  .sleeping-back{
+    -webkit-clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 98%);
+            clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 98%);
+  }
+
+  #golf-abc .golf-abc-back{
+    -webkit-clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 95%);
+            clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 95%);
+  }
+
+  #golf-abc .golf-abc-cover {
+    -webkit-clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 95%);
+            clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 95%);
+  }
+}
+
+.scroll-bar-wrapper {
+  width: 100%;
+  height:10px;
+  position:fixed;
+  top:0;
+  left:0;
+  background:#CCCCCC;
+}
+
+.scroll-bar {
+  width:0;
+  height: inherit;
+  background: #7ecab1;
+}
+
 @media (min-width: 768px) {
   .md\:block {
     display: block;
-  }
-
-  .md\:h-full {
-    height: 100%;
   }
 }
 
@@ -910,9 +948,4 @@ footer img {
     flex-direction: row;
   }
 }
-
-@media (min-width: 1280px) {
-  .xl\:w-11\/12 {
-    width: 91.666667%;
-  }
-}
+  

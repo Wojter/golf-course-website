@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 body {
-        font-family: "Muli", sans-serif;
-        color: #746859;
-        background-color: white;
+    font-family: "Muli", sans-serif;
+    color: #746859;
+    background-color: white;
 }
 .navbar-logo {
     display: flex;
@@ -47,7 +47,12 @@ body {
     flex-basis: 100%;
     justify-content: center;
 }
-
+.header .navbar-nav .nav-item {
+    padding-left: 10px;
+}
+.header .navbar-nav .nav-item .nav-link{
+    padding: 4px 0;
+}
 h2.section-title {
     font-size: 28px;
     text-align: center;
@@ -76,11 +81,12 @@ h3.section-title {
 .news-container .news-link:hover {
     color: rgb(42, 18, 68);
 }
+
 #main .main-content {
     color: #fff;
 }
 .main-content .main-links {
-    padding-top: 50px;
+    padding-top: 70px;
     padding-bottom: 30px;
 }
 .main-content .main-links li {
@@ -256,3 +262,37 @@ footer img {
     margin: 0 auto;
     width: 100px;
 }
+@media (max-width: 768px) {
+    #tournament .tournament-cover {
+        clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 95%);
+
+    }
+    #tournament .tournament-back{
+        clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 95%);
+    }
+    .sleeping-back{
+        clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 98%);
+    }
+    #golf-abc .golf-abc-back{
+        clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 95%);
+    }
+    #golf-abc .golf-abc-cover {
+        clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 95%);
+    }
+
+}
+.scroll-bar-wrapper {
+    width: 100%;
+    height:10px;
+    position:fixed;
+    top:0;
+    left:0;
+    background:#CCCCCC;
+  }
+  
+  .scroll-bar { 
+    width:0;
+    height: inherit;
+    background: #7ecab1;
+  }
+  
